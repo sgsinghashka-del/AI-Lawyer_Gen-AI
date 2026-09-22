@@ -1,0 +1,17 @@
+keyword,section,law_type,category,punishment,bailable,court,action_required,description
+money,IPC 420,Criminal Law,Fraud,7 Years,No,Magistrate Court,Collect payment proof and agreement,Cheating and fraud related case
+fraud,IPC 420,Criminal Law,Fraud,7 Years,No,Magistrate Court,Collect transaction and chat proof,Financial cheating or fraud matter
+loan,IPC 406,Criminal Law,Money Dispute,3 Years,Yes,Magistrate Court,Collect loan proof and witness,Criminal breach of trust
+threat,IPC 506,Criminal Law,Threat,2 Years,Yes,Magistrate Court,File police complaint,Criminal intimidation
+fight,IPC 323,Criminal Law,Assault,1 Year,Yes,Magistrate Court,Medical report and witness proof,Physical assault case
+harassment,IPC 354,Criminal Law,Women Safety,5 Years,No,Sessions Court,File FIR immediately,Harassment against women
+theft,IPC 379,Criminal Law,Theft,3 Years,Yes,Magistrate Court,Collect CCTV and witness,Theft related case
+property,Property Law,Civil Law,Property,Civil Action,Yes,Civil Court,Collect land papers and registry,Property dispute case
+land,Property Law,Civil Law,Property,Civil Action,Yes,Civil Court,Verify ownership documents,Land dispute matter
+cyber,IT Act 66,Cyber Law,Cyber Crime,3 Years,No,Cyber Court,Collect screenshots and URLs,Cyber crime activity
+online,IT Act 66D,Cyber Law,Online Fraud,3 Years,No,Cyber Court,Report on cyber crime portal,Online cheating by personation
+business,Contract Act,Civil Law,Business,Civil Action,Yes,Commercial Court,Check agreement and invoices,Business dispute case
+family,Family Law,Family Law,Family,Civil Action,Yes,Family Court,Collect family documents,Family dispute matter
+divorce,Hindu Marriage Act,Family Law,Marriage,Civil Action,Yes,Family Court,Prepare marriage documents,Divorce related matter
+rent,Rent Agreement,Civil Law,Rent,Civil Action,Yes,Civil Court,Check rent agreement,Rent or tenant dispute
+salary,Labour Law,Civil Law,Employment,Civil Action,Yes,Labour Court,Collect offer letter and salary slips,Salary dispute case

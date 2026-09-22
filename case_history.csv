@@ -1,0 +1,8 @@
+case_id,date,client_name,case_type,priority,status,matched_section,case_score
+CASE001,2026-05-17,Rahul Kumar,Cyber Crime,High,Pending,IT Act 66,60
+CASE002,2026-05-17,Anjali Sharma,Family Case,Medium,Open,Family Law,40
+CASE003,2026-05-17,Rohit Singh,Property Case,Low,Closed,Property Law,50
+CASE004,2026-05-17,Pooja Verma,Money Dispute,High,Pending,IPC 406,70
+CASE005,2026-05-23,krish,Property Case,Low,Open,IPC 420,20
+CASE006,2026-05-23,,Property Case,Low,Open,Not Found,0
+CASE007,2026-09-22,krish,Property Case,High,Open,Property Law,60
