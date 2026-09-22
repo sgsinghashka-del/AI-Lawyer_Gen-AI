@@ -406,8 +406,6 @@ GitHub:
 
 https://github.com/sgsinghashka-del
 
-🚀 Live Demo:
-https://ai-lawyer-gen-ai.streamlit.app/
 
 ---
 
@@ -416,3 +414,7 @@ https://ai-lawyer-gen-ai.streamlit.app/
 GitHub Repository:
 
 https://github.com/sgsinghashka-del/AI-Lawyer_Gen-AI
+
+🚀 Live Demo:
+https://ai-lawyer-gen-ai.streamlit.app/
+
