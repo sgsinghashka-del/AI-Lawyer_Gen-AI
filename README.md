@@ -233,18 +233,6 @@ When the OpenAI key is not present, the app automatically falls back to an offli
 
 ---
 
-## Limitations and considerations
-
-This project is a demo and should be treated as a prototype. Current limitations include:
-
-- hardcoded admin login credentials
-- CSV data storage rather than a relational database
-- rule-based matching rather than full legal reasoning
-- no production-grade audit trail or security controls
-- no lawyer-grade legal validation layer
-
-These are acceptable for a learning or portfolio project, but they should be improved before any real-world legal deployment.
-
 ---
 
 ## Future improvements
@@ -265,16 +253,3 @@ Possible next steps:
 
 This project is intended for educational and demonstration purposes. It is not legal advice and should not be used as a substitute for professional legal consultation.
 
----
-
-## Final assessment
-
-AI Lawyer is a strong and practical example of a legal-tech prototype built with Python and Streamlit. It demonstrates a real legal workflow, clean UX, and a clear path toward AI-enhanced legal operations. The project stands out because it is simple enough to run locally, modular enough to extend, and relevant to the growing legal-tech landscape.
-
-If you want, I can also help turn this project into a more polished GitHub-ready portfolio repository by adding:
-
-- a better architecture diagram
-- a feature roadmap
-- a one-click deployment setup
-- a more advanced AI legal assistant page
-- a custom logo and theme
