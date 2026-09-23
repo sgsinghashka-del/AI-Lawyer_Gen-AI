@@ -1,0 +1,44 @@
+# Add these imports near the top of app.py:
+from rag_pipeline import RAGConfigurationError, answer_question, build_vector_store
+
+# Add this page to the existing navigation list:
+"RAG Legal Assistant",
+
+# Add this branch before the existing `if menu == "New Case":` branch:
+elif menu == "RAG Legal Assistant":
+    st.title("RAG Legal Assistant")
+    st.caption("Ask questions about the indexed legal database and case history.")
+
+    if not os.getenv("OPENAI_API_KEY"):
+        st.warning("Configure OPENAI_API_KEY in .env or Streamlit secrets to enable this page.")
+    else:
+        if st.button("Rebuild knowledge base"):
+            st.cache_resource.clear()
+            with st.spinner("Creating embeddings and rebuilding Chroma..."):
+                build_vector_store(force_rebuild=True)
+            st.success("Knowledge base rebuilt from legal.csv and case_history.csv.")
+
+        @st.cache_resource(show_spinner=False)
+        def get_rag_store():
+            return build_vector_store()
+
+        question = st.text_area(
+            "Legal research question",
+            placeholder="Which legal section is relevant to a cyber fraud matter?",
+            height=120,
+        )
+        if st.button("Search and answer", type="primary"):
+            try:
+                with st.spinner("Retrieving relevant records and generating an answer..."):
+                    answer, sources = answer_question(question, get_rag_store())
+                st.markdown("### Answer")
+                st.write(answer)
+                st.caption("This is AI-generated legal research, not legal advice. Verify with a qualified lawyer.")
+                with st.expander("Retrieved sources"):
+                    for source in sources:
+                        st.write(f"{source.metadata.get('source')} — row {source.metadata.get('row')}")
+                        st.code(source.page_content)
+            except (RAGConfigurationError, ValueError) as error:
+                st.error(str(error))
+            except Exception as error:
+                st.error(f"RAG request failed: {error}")
