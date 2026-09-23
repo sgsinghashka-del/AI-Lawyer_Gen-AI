@@ -23,17 +23,20 @@ pandas==3.0.3
 pillow==12.2.0
 protobuf==7.35.0
 pyarrow==24.0.0
+pydeck==0.9.0
 PyPDF2==3.0.1
+python-dateutil==2.9.0.post0
 python-dotenv==1.1.1
-requests==2.34.2
+requests==2.34.0
 streamlit==1.57.0
 tenacity==9.1.4
+typing_extensions==4.15.0
 urllib3==2.7.0
 uvicorn==0.47.0
 watchdog==6.0.0
 websockets==16.0
 
-# OpenAI + LangChain RAG stack
+# OpenAI + LangChain + Chroma RAG stack
 openai>=1.109.0
 langchain>=0.3.27
 langchain-chroma>=0.2.6
